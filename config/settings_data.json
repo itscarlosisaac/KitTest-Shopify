@@ -9,7 +9,12 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "mono",
     "type_body_font": "assistant_n4",
-    "checkout_logo_position": "center",
+    "page_width": "1200",
+    "predictive_search_enabled": false,
+    "predictive_search_show_price": false,
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#e22120",
     "checkout_input_background_color_mode": "transparent",
     "sections": {
       "announcement-bar": {
@@ -18,7 +23,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
             }
           }
         },
@@ -26,6 +33,49 @@
           "announcement-bar-0"
         ],
         "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
         }
       }
     },
